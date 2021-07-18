@@ -1,0 +1,29 @@
+#listen: 127.0.0.1:8080
+listen: 0.0.0.0:8080
+
+db:
+  driver: mysql
+  username: root
+  host: localhost
+  port: 3306
+  dbName: address_book
+
+cors:
+  allowedHeaders:
+    - Authorization
+    - Accept
+    - Content-Type
+    - Content-Length
+    - Accept-Encoding
+    - X-CSRF-Token
+    - X-Auth-Account
+    - X-Auth-Username
+    - X-Auth-Subject
+  allowedMethods:
+    - GET
+    - POST
+    - DELETE
+    - PUT
+    - PATCH
+    - OPTIONS
+  maxAge: 1728000
